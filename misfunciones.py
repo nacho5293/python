@@ -19,3 +19,10 @@ def alta_cliente(dni,nombre,*apellidos):
 	print "Tienes "+str(len(apellidos))+" apellidos"
 	for x in apellidos:
 		print x
+		
+def iniciales(nombre,*apellidos):
+	ini=nombre[0]+'.'
+	for x in apellidos:
+		ini=ini+x[0]+'.'
+	return ini
+	
